@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 930px;
+}
+
+header {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex-basis: 50%;
+}
+
+.name {
+    text-align: right;
+    color: #2d3c49;
+    font-size: 24px;
+    flex-basis: 50%;
+}
+
+h1 {
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+hr {
+    border: 1px solid #a3a2a2;
+    width: 100%;
+    border-width: 2px;
+}
+
+.main-image {
+    padding-top: 10px;
+    max-width: 100%;
+}
+
+.featured-work {
+    color: #7d97ad;
+    font-size: 23px;
+    width: 100%;
+}
+
+.featured-work h2 {
+    font-weight: 100;
+}
+
+/*Items are positioned with space between the lines*/
+.featured-items {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.featured-item {
+    color: #2d3c49;
+    text-align: center;
+    font-size: 30px;
+}
+
+.featured-item h3 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.featured-item a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+.featured-item p {
+    margin: 0px;
+}
+
+.image-resp {
+    max-width: 100%;
+}
+
+/* Media Queries --> Setting max-width to 600px so that when width is less than 600 below changes occur */
+@media only screen and (max-width: 600px) {
+    .name {
+        text-align: center;
+        flex-basis: 100%;
+        font-size: 16px;
+    }
+
+    .logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .featured-work {
+        text-align: center;
+        word-wrap: break-word;
+        font-size: 16px;
+    }
+
+    .featured-items {
+        width: 100%;
+    }
+    
+    .featured-item {
+        width: 100%;
+    }
+
+    .featured-item h3 {
+        word-wrap: break-word;
+        font-size: 16px;
+    }
+
+    .featured-item p {
+        word-wrap: break-word;
+        font-size: 10px;
+    }
+}
